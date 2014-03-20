@@ -6,7 +6,7 @@ You can report any problem or help to improve bitcoin.org by opening an issue or
 
 GitHub allows you to make changes to a project using git, and later submit them in a "pull request" so they can be reviewed and discussed. Many online how-tos exist so you can learn git, [here's a good one](https://www.atlassian.com/git/tutorial/git-basics).
 
-In order to use GitHub, you need to [sign up](http://github.com/signup) and [set up git](https://help.github.com/articles/set-up-git). You will also need to click the **Fork** button on the bitcoin.org [GitHub page](https://github.com/bitcoin/bitcoin.org) and clone your GitHub repository into a local directory using the following command line:
+In order to use GitHub, you need to [sign up](http://github.com/signup) and [set up git](https://help.github.com/articles/set-up-git). You will also need to click the **Fork** button on the bitcoin.org [GitHub page](https://github.com/bitcoin/bitcoin.org) and clone your GitHub repository into a local directory using the following command lines:
 
 ```
 git clone (url provided by GitHub on your fork's page) bitcoin.org
@@ -30,7 +30,7 @@ When submitting a pull request, please take required time to discuss your change
 
 You simply need to push additionnal commits on the appropriate branch of your GitHub repository. That's basically the same steps as above, except you don't need to re-create the branch and the pull request.
 
-**How reset and update your master branch with latest upstream changes**
+**How to reset and update your master branch with latest upstream changes**
 
 1. Fetch upstream changes. `git fetch upstream`
 2. Checkout to your master branch. `git checkout master`
