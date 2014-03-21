@@ -8,7 +8,7 @@
 
 Installing dependencies on Ubuntu 12.10
 
-    sudo apt-get install jekyll node-less ruby1.9.1-dev
+    sudo apt-get install jekyll node-less ruby1.9.1-dev libicu-dev
     sudo gem install ffi-icu
 
 Installing dependencies on older Ubuntu and Debian distributions
