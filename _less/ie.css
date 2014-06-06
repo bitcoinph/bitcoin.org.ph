@@ -9,13 +9,24 @@ body{
 .body{
 	width:940px;
 }
-.footer{
-	width:800px;
-}
 .lang{
 	border-left:2px solid #f7f7f7;
 	border-right:2px solid #f7f7f7;
 	border-top:2px solid #f7f7f7;
+}
+.lang li ul{
+	top:28px;
+}
+.lang li ul li{
+	zoom:1;
+	display:inline;
+}
+.lang li a,
+.lang li a:link,
+.lang li a:visited,
+.lang li a:active{
+	zoom:1;
+	display:inline;
 }
 
 .menusimple li{
@@ -152,18 +163,18 @@ body{
 }
 
 .resources div{
-	border-top:expression((this.parentNode!=this.parentNode.parentNode.getElementsByTagName('DIV')[0])?'1px solid #e0e0e0':'0');
+	border-top:expression(this.parentNode.className=='resources'&&this!=this.parentNode.getElementsByTagName('DIV')[0]?'1px solid #e0e0e0':'0');
 }
 .resources div div{
 	zoom:1;
 	display:inline;
 	padding-top:25px;
 	position:relative;
-	padding-right:expression(this.parentNode.getElementsByTagName('DIV')[0]==this?'40px':'');
-	border-right:expression(this.parentNode.getElementsByTagName('DIV')[0]==this?'1px solid #e0e0e0':'');
-	padding-left:expression(this.parentNode.getElementsByTagName('DIV')[1]==this?'40px':'');
-	border-left:expression(this.parentNode.getElementsByTagName('DIV')[1]==this?'1px solid #e0e0e0':'');
-	margin-left:expression(this.parentNode.getElementsByTagName('DIV')[1]==this?'-1px':'');
+	padding-right:expression(this.parentNode.parentNode.className=='resources'&&this.parentNode.getElementsByTagName('DIV')[0]==this?'40px':'');
+	border-right:expression(this.parentNode.parentNode.className=='resources'&&this.parentNode.getElementsByTagName('DIV')[0]==this?'1px solid #e0e0e0':'');
+	padding-left:expression(this.parentNode.parentNode.className=='resources'&&this!=this.parentNode.getElementsByTagName('DIV')[0]?'40px':'');
+	border-left:expression(this.parentNode.parentNode.className=='resources'&&this!=this.parentNode.getElementsByTagName('DIV')[0]?'1px solid #e0e0e0':'');
+	margin-left:expression(this.parentNode.parentNode.className=='resources'&&this!=this.parentNode.getElementsByTagName('DIV')[0]?'-1px':'');
 }
 .resources>div>div:first-child+div{
 	/*This one is for IE7 only*/
@@ -177,6 +188,17 @@ body{
 }
 .resourcesorg div{
 	border-top:expression(this.parentNode.className=='resourcesorg'&&this.parentNode.getElementsByTagName('DIV')[0]!=this?'1px solid #e0e0e0':'0');
+}
+
+.resourcesmore div{
+	zoom:1;
+	display:inline;
+}
+
+.docreference a{
+	zoom:1;
+	display:inline;
+	width:200px;
 }
 
 .downloadbox{
@@ -247,8 +269,9 @@ body{
 	display:expression((this.parentNode.childNodes[0]==this||this.parentNode.childNodes[1]==this||this.parentNode.childNodes[2]==this||this.parentNode.childNodes[3]==this)?'list-item':'');
 }
 
-.floatimg{
+.pleftfloat span{
 	position:relative;
+	float:left;
 }
 
 .previewrow h2{
